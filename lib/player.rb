@@ -21,7 +21,7 @@ class Player
   
   def attacks(player)
     puts "le joueur #{@name} attaque le joueur #{player.name}"
-    damage = comput_damage
+    damage = comput_damage #renvoi à méthode comput_damage qui permet d'avoir un chiffre aléatoire
     puts "#{damage} points de dommage infligé à #{player.name}"
     player.gets_damage(damage)
   end
@@ -29,6 +29,12 @@ class Player
   def comput_damage
     return rand(1..6)
   end
+
+
+end
+
+class Humanplayer(Player)
+  
 
 
 end
