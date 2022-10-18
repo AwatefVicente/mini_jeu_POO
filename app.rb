@@ -2,8 +2,13 @@
 require 'bundler'
 Bundler.require
 
-#require_relative 'lib/game'
+require_relative 'lib/game'
 require_relative 'lib/player'
+
+puts "-------------------------------------------------
+| WECOLME on 'POO-POO les mechants' bitches    !|
+| Le but du jeu est dêtre le dernier survivant !|
+-------------------------------------------------"
 
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
